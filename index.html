@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="media">
+            <p>Seu resultado</p>
+            <div class="notaTotal">
+                <h1 id="resultadoNota">0</h1>
+                <p>de 100</p>
+            </div>
+            <h2 id="descricao">Digite sua nota primeiro</h2>
+        </div>
+        <div class="notas">
+            <h2>Digite suas notas</h2>
+            <ul>
+                <li class="portugues">
+                    <div class="materia">
+                        <i class='bx bxs-book'></i>
+                        <p>Português</p>
+                    </div>
+                    <div class="notaUsuario">
+                        <input type="number" placeholder="0" id="notaPortugues" min= "0" max="100">
+                        <p>/100</p>
+                    </div>
+                </li>
+                <li class="matematica">
+                    <div class="materia">
+                        <i class='bx bx-math'></i>
+                        <p>Matemática</p>
+                    </div>
+                    <div class="notaUsuario">
+                        <input type="number" placeholder="0" id="notaMatematica" min= "0" max="100">
+                        <p>/100</p>
+                    </div>
+                </li>
+                <li class="historia">
+                    <div class="materia">
+                        <i class='bx bx-low-vision'></i>
+                        <p>História</p>
+                    </div>
+                    <div class="notaUsuario">
+                        <input type="number" placeholder="0" id="notaHistoria" min= "0" max="100">
+                        <p>/100</p>
+                    </div>
+                </li>
+                <li class="ciencias">
+                    <div class="materia">
+                        <i class='bx bxs-hourglass-bottom'></i>
+                        <p>Ciências</p>
+                    </div>
+                    <div class="notaUsuario">
+                        <input type="number" placeholder="0" id="notaCiencias" min= "0" max="100">
+                        <p>/100</p>
+                    </div>
+                </li>
+            </ul>
+            <button onclick="calcular()">
+                Calcular
+            </button>
+        </div>
+    </section>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
