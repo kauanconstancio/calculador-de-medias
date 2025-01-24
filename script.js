@@ -7,19 +7,19 @@ function calcular(){
     const notaCiencias = parseInt(document.getElementById('notaCiencias').value)
     
     //somar todos e dividir por 4
-    let soma = (notaPortugues + notaMatematica + notaHistoria + notaCiencias) / 4;
+    let resultado = (notaPortugues + notaMatematica + notaHistoria + notaCiencias) / 4;
     
     let resultadoNota = document.getElementById('resultadoNota');
     
     //exibir calculo no resultado
-    resultadoNota.innerHTML = soma;
+    resultadoNota.innerHTML = resultado;
 
     const descricao = document.getElementById('descricao');
-    if (resultadoFinal >= 60) {
+    if (resultado >= 60) {
         let mensagemSucesso = 'Você está acima da média!'
         descricao.innerHTML = mensagemSucesso;
     } else{
-        let mensagemErro = 'Que pena :( se esforce um pouco mais'
+        let mensagemErro = 'Que pena :( você não atingiu a média!'
         descricao.innerHTML = mensagemErro;
     }
 }
