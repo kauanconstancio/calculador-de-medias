@@ -110,4 +110,60 @@ body section .notas button {
   color: #fff;
   background-color: #303B5C;
   cursor: pointer;
+}
+
+@media (max-width: 440px) {
+  body {
+    margin: 0;
+  }
+  body section {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    gap: 0px;
+    border-radius: 0;
+  }
+  body section .media {
+    padding: 10px;
+    border-radius: 0 0 38px 38px;
+    gap: 10px;
+    height: 60%;
+    width: 100%;
+  }
+  body section .media p {
+    font-size: 25px;
+  }
+  body section .media h2 {
+    font-size: 20px;
+    width: 300px;
+  }
+  body section .notas {
+    padding: 10px;
+  }
+  body section .notas h2 {
+    text-align: center;
+  }
+  body section .notas ul {
+    width: 300px;
+  }
+  body section .notas ul li .materia i {
+    font-size: 30px;
+  }
+  body section .notas ul li p {
+    font-size: 20px;
+  }
+  body section .notas ul li .notaUsuario input {
+    font-size: 20px;
+  }
+  body section .notas ul li .notaUsuario input::-moz-placeholder {
+    font-size: 20px;
+  }
+  body section .notas ul li .notaUsuario input::placeholder {
+    font-size: 20px;
+  }
+  body section .notas button {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
